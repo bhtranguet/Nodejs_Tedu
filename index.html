@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery/dist/jquery.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="http://localhost:8000/process_post" method="post">
-        <input type="text" name="name"><br>
-        <input type="text" name="age"><br>
-        <input type="submit" value="Submit">
+    <form action="upload" id="uploadForm" enctype="multipart/form-data" method="post">
+        <input type="file" name="myfile" id="myfile"><br>
+        <input id="btn-upload" type="button" value="btn-upload"><br>
+        <span id="status"></span>
     </form>
 </body>
+
+<script src="/public/js/index.js" type="module"></script>
 </html>
